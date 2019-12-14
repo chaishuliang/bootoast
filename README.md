@@ -21,6 +21,7 @@
 
 ```javascript
 bootoast.toast({
+    title: '通知',
     message: 'Bootoast!',
     type: 'info',
     position: 'bottom-center',
@@ -37,6 +38,7 @@ To use your own settings, take the default example above and replace with your v
 
 Option | Default Value | Descrition
 :--- | :--- | :---
+`title` | `'通知'` | Any, **any**, String!
 `message` | `'Helo!'` | Any, **any**, HTML String!
 `type` | `'info'` | A raw string that can be any of Bootstrap 3 alert type classes without the `alert-` preffix. [Available types](#types).
 `icon` | based on choosen `type` OR `undefined` | An icon following the standard Bootstrap 3 glyphicons name without the `glyphicon-` preffix. [Icons choosen by type](#icon-defaults).
@@ -69,6 +71,15 @@ Supported | Sinonymus
 `bottom-left` | `left-bottom`
 `bottom-right` | `right-bottom`
 
+### Supported Progressbar
+
+Supported
+
+* false
+* top
+* bottom
+* background
+
 
 ### Icon Defaults
 
@@ -81,6 +92,9 @@ success | ok-sign
 danger | remove-sign
 info | info-sign
 
+## CSS class
+
+* `.bootoast-ellipsis-2 ` only display two rows.
 
 ## Versioning
 
